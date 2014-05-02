@@ -12,7 +12,7 @@ namespace OctopusDeploy.QFrameBootcamp.DB
         {
             try
             {
-                var migrationConnectionString = ConfigurationManager.ConnectionStrings["QFrameBootcampConnectionString"].ConnectionString;
+                var migrationConnectionString = ConfigurationManager.ConnectionStrings["BootcampConnectionString"].ConnectionString;
                 var migrationAssembly = typeof(Program).Assembly;
                 Execute(migrationAssembly, "migrate:up", "SqlServer", migrationConnectionString);
             }

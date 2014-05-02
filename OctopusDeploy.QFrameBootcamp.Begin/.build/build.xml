@@ -2,7 +2,7 @@
   <Import Project="build.config.xml"/>
   <Import Project="build.tasks.xml"/>
   
-  <Target Name="BuildCI" DependsOnTargets="
+  <Target Name="CI" DependsOnTargets="
     UpdateVersionNumber;
     Compile;"
   />

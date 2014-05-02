@@ -14,7 +14,7 @@ namespace OctopusDeploy.QFrameBootcamp.Web.Controllers
 
         private static IEnumerable<UserDTO> GetUsers()
         {
-            using (var db = new PetaPoco.Database("QFrameBootcampConnectionString"))
+            using (var db = new PetaPoco.Database("BootcampConnectionString"))
             {
                 var users = db.Query<UserDTO>("SELECT * FROM Users ORDER BY Firstname ASC, Lastname ASC");
                 return users;
