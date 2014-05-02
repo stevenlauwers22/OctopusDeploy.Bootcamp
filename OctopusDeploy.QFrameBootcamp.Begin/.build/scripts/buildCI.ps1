@@ -1,5 +1,5 @@
 try {
-	& 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe' '..\build.xml' /t:BuildCI
+	& 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe' '..\build.xml' /t:CI
 }
 catch {
 	Write-Error $error[0]

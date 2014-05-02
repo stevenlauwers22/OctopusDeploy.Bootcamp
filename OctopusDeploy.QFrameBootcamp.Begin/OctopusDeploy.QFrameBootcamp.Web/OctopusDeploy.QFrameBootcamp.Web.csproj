@@ -93,6 +93,9 @@
     <Content Include="Web.Acceptance.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Web.Test.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
     <Content Include="Web.Production.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

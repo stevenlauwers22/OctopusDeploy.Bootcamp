@@ -1,0 +1,58 @@
+﻿@model IEnumerable<OctopusDeploy.QFrameBootcamp.Web.Models.UserDTO>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>OctopusDeploy.QFrameBootcamp - Users</title>
+        <style type="text/css">
+            table {
+	            font-family: verdana,arial,sans-serif;
+	            font-size:11px;
+	            color:#333333;
+	            border-width: 1px;
+	            border-color: #666666;
+	            border-collapse: collapse;
+                width: 100%;
+            }
+            table th {
+	            border: 1px solid #666666;
+	            padding: 8px;
+	            background-color: #dedede;
+                text-align: left;
+            }
+            table td {
+	            border: 1px solid #666666;
+	            padding: 8px;
+	            background-color: #ffffff;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div>  
+            <table>
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (var user in Model)
+                        {
+                            <tr>
+                                <td>@user.Firstname</td>
+                                <td>@user.Lastname</td>
+                            </tr>    
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>
