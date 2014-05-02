@@ -1,0 +1,24 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <UsingTask AssemblyFile="$(SolutionDir)\packages\MSBuild.Extension.Pack.1.3.0\tools\net40\MSBuild.ExtensionPack.dll" TaskName="MSBuild.ExtensionPack.Framework.AssemblyInfo"/>
+
+  <Target Name="UpdateVersionNumber">
+    <ItemGroup>
+      <AssemblyInfoFiles Include="$(SolutionDir)\**\AssemblyInfo.*"/>
+    </ItemGroup>
+
+    <AssemblyInfo
+      AssemblyInfoFiles="@(AssemblyInfoFiles)"
+      AssemblyVersion="$(BuildVersion)"
+      AssemblyFileVersion="$(BuildVersion)"/>
+
+    <Message Text="##teamcity[buildNumber '$(BuildVersion)']" />
+  </Target>
+
+  <Target Name="Compile">
+    <MSBuild
+      Projects="$(SolutionPath)"
+      Targets="Rebuild"
+      Properties="Configuration=$(BuildConfiguration);"
+    />
+  </Target>
+</Project>
