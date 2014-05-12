@@ -5,6 +5,7 @@
   <Target Name="CI" DependsOnTargets="
     UpdateVersionNumber;
     Compile;
-    Package;"
+    Package;
+    DeployToTest;"
   />
 </Project>
