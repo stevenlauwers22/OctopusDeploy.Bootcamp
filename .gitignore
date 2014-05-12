@@ -27,3 +27,12 @@ OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.v11.suo
 /OctopusDeploy.QFrameBootcamp.End/OctopusDeploy.QFrameBootcamp.ncrunchsolution.user
 /OctopusDeploy.QFrameBootcamp.End/OctopusDeploy.QFrameBootcamp.sln.DotSettings
 /OctopusDeploy.QFrameBootcamp.End/OctopusDeploy.QFrameBootcamp.v11.suo
+
+/Bootcamp-Acceptance-Dbserver.bat
+/Bootcamp-Acceptance-Webserver1.bat
+/Bootcamp-Acceptance-Webserver2.bat
+/Bootcamp-Production-Dbserver.bat
+/Bootcamp-Production-Webserver1.bat
+/Bootcamp-Production-Webserver2.bat
+/Bootcamp-Test-Dbserver.bat
+/Bootcamp-Test-Webserver.bat
