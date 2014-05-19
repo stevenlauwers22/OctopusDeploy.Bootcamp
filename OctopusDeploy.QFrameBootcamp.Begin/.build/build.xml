@@ -7,4 +7,8 @@
     Compile;
     Package;"
   />
+
+  <Target Name="DeployToTest">
+    <Exec Command="$(OctoExe) create-release --server=$(OctoApiEndpoint) --apiKey=$(OctoApiKey) --project=Bootcamp-Demo --deployto=Test --version=$(BuildVersion) --packageversion=$(BuildVersion) --waitfordeployment" />
+  </Target>
 </Project>
