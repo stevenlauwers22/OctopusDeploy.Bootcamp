@@ -1,4 +1,5 @@
-﻿@model IEnumerable<OctopusDeploy.QFrameBootcamp.Web.Models.UserDTO>
+﻿@using OctopusDeploy.QFrameBootcamp.Web.Controllers
+@model IEnumerable<OctopusDeploy.QFrameBootcamp.Web.Models.UserDTO>
 
 <!DOCTYPE html>
 <html>
@@ -33,6 +34,8 @@
     <body>
         
         <div>  
+            <h1>QFrame employees</h1>
+            <h2>Version: @typeof(UsersController).Assembly.GetName().Version</h2>
             <table>
                 <thead>
                     <tr>
