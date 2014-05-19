@@ -4,6 +4,7 @@
   
   <Target Name="CI" DependsOnTargets="
     UpdateVersionNumber;
-    Compile;"
+    Compile;
+    Package;"
   />
 </Project>
