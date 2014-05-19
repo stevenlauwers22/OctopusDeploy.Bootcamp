@@ -1,9 +1,3 @@
-/aws-dbserver.rdp
-/aws-dbserver.txt
-/aws-keypair.pem
-/aws-webtest.rdp
-/aws-webtest.txt
-/Demo URLs.txt
 /OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.DB/bin
 /OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.DB/obj
 /OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.DB/OctopusDeploy.QFrameBootcamp.DB.csproj.user
@@ -14,8 +8,7 @@
 /OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.sln.DotSettings
 /OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.ncrunchsolution
 /OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.ncrunchsolution.user
-~$Presentatie.pptx
-OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.v11.suo
+/OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.v11.suo
 /OctopusDeploy.QFrameBootcamp.End/OctopusDeploy.QFrameBootcamp.DB/OctopusDeploy.QFrameBootcamp.DB.csproj.user
 /OctopusDeploy.QFrameBootcamp.End/OctopusDeploy.QFrameBootcamp.DB/bin
 /OctopusDeploy.QFrameBootcamp.End/OctopusDeploy.QFrameBootcamp.DB/obj
@@ -28,14 +21,7 @@ OctopusDeploy.QFrameBootcamp.Begin/OctopusDeploy.QFrameBootcamp.v11.suo
 /OctopusDeploy.QFrameBootcamp.End/OctopusDeploy.QFrameBootcamp.sln.DotSettings
 /OctopusDeploy.QFrameBootcamp.End/OctopusDeploy.QFrameBootcamp.v11.suo
 
-/Bootcamp-Acceptance-Dbserver.bat
-/Bootcamp-Acceptance-Webserver1.bat
-/Bootcamp-Acceptance-Webserver2.bat
-/Bootcamp-Production-Dbserver.bat
-/Bootcamp-Production-Webserver1.bat
-/Bootcamp-Production-Webserver2.bat
-/Bootcamp-Test-Dbserver.bat
-/Bootcamp-Test-Webserver.bat
-
 /Demo - Start services.bat
 /Demo - URLs.txt
+
+/Octopus.Tentacle.2.0.13.1100-x64.msi
