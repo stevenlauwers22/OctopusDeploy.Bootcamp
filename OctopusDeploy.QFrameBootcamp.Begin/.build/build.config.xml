@@ -4,7 +4,6 @@
     <SolutionDir>..</SolutionDir>
     <SolutionFileName>OctopusDeploy.QFrameBootcamp.sln</SolutionFileName>
     <SolutionPath>$(SolutionDir)\$(SolutionFileName)</SolutionPath>
-    <SolutionBuildArtifacts>$(SolutionDir)\.build\artifacts</SolutionBuildArtifacts>
   </PropertyGroup>
 
   <PropertyGroup Label="Build properties">
@@ -17,11 +16,5 @@
     <BuildVersionNumber Condition="'$(BuildVersionNumber)' == ''">0</BuildVersionNumber>
     <BuildVersionRevision Condition="'$(BuildVersionRevision)' == ''">0</BuildVersionRevision>
     <BuildVersion Condition="'$(BuildNumber)' == ''">$(BuildVersionMajor).$(BuildVersionMinor).$(BuildVersionNumber).$(BuildVersionRevision)</BuildVersion>
-  </PropertyGroup>
-
-  <PropertyGroup Label="Deploy properties">
-    <OctoExe>$(SolutionDir)\packages\OctopusTools.2.1.2.37\Octo.exe</OctoExe>
-    <OctoApiEndpoint>http://localhost:8082/api</OctoApiEndpoint>
-    <OctoApiKey>API-ADKGVDZFVPLWXAMVDZXJ040MV8</OctoApiKey>
   </PropertyGroup>
 </Project>

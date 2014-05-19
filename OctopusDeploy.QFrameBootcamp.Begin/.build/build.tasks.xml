@@ -21,15 +21,4 @@
       Properties="Configuration=$(BuildConfiguration);"
     />
   </Target>
-
-  <Target Name="Package">
-    <MSBuild
-      Projects="$(SolutionPath)"
-      Targets="Rebuild"
-      Properties="
-        Configuration=$(BuildConfiguration);
-        RunOctoPack=true;
-        OctoPackPackageVersion=$(BuildNumber);"
-    />
-  </Target>
 </Project>

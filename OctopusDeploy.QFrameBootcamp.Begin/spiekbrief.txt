@@ -1,0 +1,53 @@
+
+Package target
+--------------
+
+  <Target Name="Package">
+    <MSBuild
+      Projects="$(SolutionPath)"
+      Targets="Rebuild"
+      Properties="
+        Configuration=$(BuildConfiguration);
+        RunOctoPack=true;
+        OctoPackPackageVersion=$(BuildNumber);"
+    />
+  </Target>
+
+Octopus
+-------
+
+NuGet feed: 
+TeamCity
+http://localhost:8080/httpAuth/app/nuget/v1/FeedService.svc
+
+Project group: Bootcamp-Demo
+Project: Bootcamp-Demo
+
+Web package IIS path:
+Default Web Site/Bootcamp-Demo-#{Octopus.Environment.Name}
+
+Powershell scripts
+------------------
+
+Deploy.ps1:
+Write-Host "Executing Deploy.ps1"
+& .\OctopusDeploy.QFrameBootcamp.DB.exe
+
+PreDeploy.ps1:
+Write-Host "Executing PreDeploy.ps1"
+
+PostDeploy.ps1
+Write-Host "Executing PostDeploy.ps1"
+
+Automatisatie vanuit TeamCity
+-----------------------------
+
+  <Target Name="DeployToTest">
+    <Exec Command="$(OctoExe) create-release --server=$(OctoApiEndpoint) --apiKey=$(OctoApiKey) --project=Bootcamp-Demo --deployto=Test --version=$(BuildVersion) --packageversion=$(BuildVersion) --waitfordeployment" />
+  </Target>
+  
+  <PropertyGroup Label="Deploy properties">
+    <OctoExe>$(SolutionDir)\packages\OctopusTools.2.1.2.37\Octo.exe</OctoExe>
+    <OctoApiEndpoint>http://localhost:8082/api</OctoApiEndpoint>
+    <OctoApiKey>API-ADKGVDZFVPLWXAMVDZXJ040MV8</OctoApiKey>
+  </PropertyGroup>

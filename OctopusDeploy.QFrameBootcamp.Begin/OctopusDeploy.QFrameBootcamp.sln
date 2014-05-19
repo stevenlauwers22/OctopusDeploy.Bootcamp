@@ -22,6 +22,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{39B4
 		.build\scripts\buildCI.ps1 = .build\scripts\buildCI.ps1
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8DDFB7C0-0333-450D-AF98-C05459A265E9}"
+	ProjectSection(SolutionItems) = preProject
+		spiekbrief.txt = spiekbrief.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
