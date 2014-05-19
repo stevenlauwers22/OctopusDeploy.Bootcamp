@@ -47,11 +47,21 @@
   <ItemGroup>
     <Compile Include="M001_Create_Table_Users.cs" />
     <Compile Include="M002_Insert_Users.cs" />
+    <Compile Include="M003_User_Email.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="OctopusDeploy.QFrameBootcamp.DB.exe.Acceptance.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OctopusDeploy.QFrameBootcamp.DB.exe.Production.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OctopusDeploy.QFrameBootcamp.DB.exe.Test.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
