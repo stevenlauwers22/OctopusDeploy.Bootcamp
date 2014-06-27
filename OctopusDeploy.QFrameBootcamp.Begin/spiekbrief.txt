@@ -5,7 +5,6 @@ Package target
   <Target Name="Package">
     <MSBuild
       Projects="$(SolutionPath)"
-      Targets="Rebuild"
       Properties="
         Configuration=$(BuildConfiguration);
         RunOctoPack=true;
